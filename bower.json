@@ -1,0 +1,12 @@
+{
+  "name": "angular-cuf-tree",
+  "description": "Angular Tree View",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hjzheng/angular-cuf-tree",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.3.x",
+    "bootstrap": "~3.1.1"
+  }
+}
