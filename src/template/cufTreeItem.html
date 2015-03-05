@@ -3,7 +3,7 @@
     	<span><i class="glyphicon glyphicon-leaf"></i></span><a href="{{href}}" style="padding-left: 5px;">{{ label }}</a>
     </span>
     <span ng-if="hasChildren">
-	    <span ng-click="clickToggle()"><i class="glyphicon" ng-class="{'glyphicon-plus': !show, 'glyphicon-minus': show}"></i></span> <a href="">{{ label }}</a>
+	    <span ng-click="clickToggle()"><i class="glyphicon" ng-class="{'glyphicon-plus': !show, 'glyphicon-minus': show}"></i></span> <a href="{{href}}">{{ label }}</a>
 	    <ul ng-transclude ng-class="{'close': !show}">
 	    	
 	    </ul>
