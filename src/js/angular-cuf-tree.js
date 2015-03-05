@@ -7,7 +7,7 @@ angular.module('cuf', ['cuf-tree-template']).directive('cufTree', function($wind
   // Runs during compile
   return {
     scope: {
-      showButtons: '='
+      showButtons: '@'
     },
     restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
     templateUrl: 'template/cufTree.html',
@@ -41,8 +41,8 @@ angular.module('cuf', ['cuf-tree-template']).directive('cufTree', function($wind
     scope: {
       label: '@',
       href: '@',
-      hasChildren: '=',
-      show: '='
+      hasChildren: '@',
+      show: '@'
     },
     restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
     templateUrl: 'template/cufTreeItem.html',
