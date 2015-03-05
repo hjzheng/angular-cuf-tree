@@ -1,9 +1,9 @@
 /**
-* cuf Module
+* cuf.tree Module
 *
 * Description
 */
-angular.module('cuf', ['cuf-tree-template']).directive('cufTree', function($window){
+angular.module('cuf.tree', ['cuf-tree-template']).directive('cufTree', function($window){
   // Runs during compile
   return {
     scope: {
