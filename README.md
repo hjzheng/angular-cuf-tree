@@ -1,10 +1,9 @@
 # angular-cuf-tree
 基于angular的tree view
 
-![ScreenShot](https://github.com/hjzheng/angular-cuf-nav/raw/master/img/angular-cuf-tree.png)
+![ScreenShot](https://github.com/hjzheng/angular-cuf-tree/raw/master/img/angular-cuf-tree.png)
 
 **Code**
-
 ```html
 <cuf-tree show-buttons="true">
     <cuf-tree-item label="item-3" href="#page1" has-children="true" show="true">
@@ -22,7 +21,7 @@
 
 ### Usage
 
-1. 引入依赖
+**1.引入依赖**
 ```html                   
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -31,12 +30,12 @@
 <script src="build/js/angular-cuf-tree.min.js"></script>
 ```                    
                 
-2. Angularjs模块依赖
+**2.Angularjs模块依赖**
 ```javascript                    
 angular.module("test", ["cuf.tree"]);
 ```                    
                 
 ### API
                     
-敬请期待... ...                
+**敬请期待... ...**                
 
