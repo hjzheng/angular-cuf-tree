@@ -42,13 +42,13 @@
                <pre>
                    <code>
 &lt;cuf-tree show-buttons=&quot;true&quot;&gt;
-    &lt;cuf-tree-item label=&quot;item-3&quot; href=&quot;#page1&quot; has-children=&quot;true&quot; show=&quot;true&quot;&gt;
-        &lt;cuf-tree-item label=&quot;item-3-1&quot; href=&quot;#page2&quot; has-children=&quot;true&quot;&gt;
-            &lt;cuf-tree-item label=&quot;item-3-1-1&quot; href=&quot;#page3&quot; has-children=&quot;true&quot;&gt;
-                &lt;cuf-tree-item label=&quot;item-3-1-1&quot; href=&quot;#page4&quot;&gt;&lt;/cuf-tree-item&gt;
-            &lt;/cuf-tree-item&gt;
-        &lt;/cuf-tree-item&gt;
-        &lt;cuf-tree-item label=&quot;item-3-2&quot; href=&quot;#page&quot;&gt;&lt;/cuf-tree-item&gt;
+    &lt;cuf-tree-item label=&quot;item-3&quot; href=&quot;#page1&quot; has-children=&quot;true&quot; show=&quot;true&quot; item-click=&quot;click('item-3')&quot;&gt;
+        &lt;cuf-tree-item label=&quot;item-3-1&quot; href=&quot;#page2&quot; has-children=&quot;true&quot; item-click=&quot;click('item-3-1')&quot;&gt;
+        &lt;cuf-tree-item label=&quot;item-3-1-1&quot; href=&quot;#page3&quot; has-children=&quot;true&quot;&gt;
+        &lt;cuf-tree-item label=&quot;item-3-1-1&quot; href=&quot;#page4&quot;&gt;&lt;/cuf-tree-item&gt;
+    &lt;/cuf-tree-item&gt;
+    &lt;/cuf-tree-item&gt;
+        &lt;cuf-tree-item label=&quot;item-3-2&quot; href=&quot;#page&quot; item-click=&quot;click('item-3-2')&quot;&gt;&lt;/cuf-tree-item&gt;
         &lt;cuf-tree-item label=&quot;item-3-3&quot; href=&quot;#page&quot;&gt;&lt;/cuf-tree-item&gt;
         &lt;cuf-tree-item label=&quot;item-3-4&quot; href=&quot;#page&quot;&gt;&lt;/cuf-tree-item&gt;
     &lt;/cuf-tree-item&gt;
