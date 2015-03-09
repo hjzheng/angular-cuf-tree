@@ -34,7 +34,7 @@ angular.module('cuf.tree', ['cuf-tree-template']).directive('cufTree', function(
         }
     }
   };
-}).directive('cufTreeItem', function(){
+}).directive('cufTreeItem', function($parse){
   // Runs during compile
   return {
     require: '^cufTree',
@@ -42,7 +42,8 @@ angular.module('cuf.tree', ['cuf-tree-template']).directive('cufTree', function(
       label: '@',
       href: '@',
       hasChildren: '@',
-      show: '@'
+      show: '@',
+      itemClick: '&'
     },
     restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
     templateUrl: 'template/cufTreeItem.html',
@@ -50,7 +51,6 @@ angular.module('cuf.tree', ['cuf-tree-template']).directive('cufTree', function(
     transclude: true,
     controllerAs: 'cufTreeItem',
     controller: function($scope, $element, $attrs, $transclude){
-    
     },
     link: function($scope, iElm, iAttrs, cufTreeCtrl) {
        
@@ -58,6 +58,10 @@ angular.module('cuf.tree', ['cuf-tree-template']).directive('cufTree', function(
 
        $scope.clickToggle = function(){
          $scope.show = ($scope.show == true ? false: true); 
+       }
+
+       $scope.treeItemClick = function () {
+          $scope.itemClick();
        }
     }
   };
