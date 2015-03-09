@@ -1,6 +1,6 @@
 <li ng-class="{'parent_li': hasChildren}">
     <span ng-if="!hasChildren">
-    	<span><i class="glyphicon glyphicon-leaf"></i></span><a href="{{href}}" style="padding-left: 5px;">{{ label }}</a>
+    	<span><i class="glyphicon glyphicon-leaf"></i></span><a href="{{href}}" style="padding-left: 5px;" ng-click="treeItemClick()">{{ label }}</a>
     </span>
     <span ng-if="hasChildren">
 	    <span ng-click="clickToggle()"><i class="glyphicon" ng-class="{'glyphicon-plus': !show, 'glyphicon-minus': show}"></i></span> <a href="{{href}}" ng-click="treeItemClick()">{{ label }}</a>
